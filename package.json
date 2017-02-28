@@ -1,6 +1,6 @@
 {
   "name": "ncu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Information for National Central University, Taiwan",
   "bin": {
     "ncu": "index.js"
