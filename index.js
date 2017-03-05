@@ -40,7 +40,7 @@ request({
         // ref: http://stackoverflow.com/questions/17374893/how-to-extract-floating-numbers-from-strings-in-javascript
         let weather = weatherHtml.match(/[+-]?\d+(\.\d+)?/g);
         let temperature = weather[0]
-        let precip = weather[1] | 0 // precipitation
+        let precip = parseFloat(weather[1]) || 0 // precipitation
         console.log(`Temperature: ${temperature} \u2103`)
         console.log(`     PRECIP: ${precip} mm/hr\n`)
         if (temperature < 20) {
