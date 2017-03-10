@@ -4,14 +4,22 @@ A simple CLI for NCU's Information
 ### Requirements
 - Node.js 6.x
 
-### Install
+### Global Install
 ```bash
 $ npm install ncu -g
+$ ncu
 ```
 
-### Usage
+### Local Install
 ```bash 
-$ ncu
+$ npm install ncu
+```
+
+```javascript
+const ncu = require('ncu')
+ncu.weather().then( data => console.log(ncu.convertWeather(data)) ).catch(err => console.log(err))
+console.log(ncu.time())
+console.log(ncu.bonus())
 ```
 
 ### Dependency References
