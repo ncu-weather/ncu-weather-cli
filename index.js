@@ -6,7 +6,7 @@ const cheerio = require('cheerio')
 const time = require('./lib/time')
 const weather = require('./lib/weather')
 const bonus = require('./lib/bonus')
-time()
+console.log(time())
 
 request({
     url: 'http://www.ncu.edu.tw',
@@ -30,7 +30,7 @@ request({
         let weatherArray = weatherHtml.match(/[+-]?\d+(\.\d+)?/g);
         let temperature = weatherArray[0]
         let precip = parseFloat(weatherArray[1]) || 0 // precipitation
-        weather(temperature, precip)
-        bonus()
+        console.log(weather(temperature, precip))
+        console.log(bonus())
     }
 )
