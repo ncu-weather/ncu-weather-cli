@@ -2,7 +2,8 @@ require('should')
 const weather = require('../lib/weather')
 
 describe('weather', () => {
-    describe('#ncu()', () => {
+    describe('#ncu()', function () {
+        this.timeout(5000)
         let ncu = weather.ncu()
         it('should be an object', () => {
             return ncu.should.finally.be.an.Object()
