@@ -4,6 +4,9 @@ module.exports = {
         "standard",
         "promise"
     ],
+    "env": {
+        "mocha": true
+    },
     "rules": {
         "indent": [
             "error",

@@ -7,7 +7,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "lint": "eslint .",
+    "ci": "eslint . && mocha",
+    "test": "mocha",
+    "start": "node cli.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,8 @@
     "eslint": "^3.17.1",
     "eslint-config-standard": "^7.0.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^2.1.1"
+    "eslint-plugin-standard": "^2.1.1",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
   }
 }

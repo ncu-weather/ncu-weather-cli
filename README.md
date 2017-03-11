@@ -23,8 +23,11 @@ console.log(ncu.bonus())
 ```
 
 ### Dependency References
-- request https://github.com/request/request
-- cheerio https://github.com/cheeriojs/cheerio
+- request [GitHub](https://github.com/request/request)
+- cheerio [GitHub](https://github.com/cheeriojs/cheerio)
+- eslint [GitHub](https://github.com/eslint/eslint) | [Site](http://eslint.org)
+- mocha [GitHub](https://github.com/mochajs/mocha) | [Site](https://mochajs.org)
+- should [GitHub](https://github.com/shouldjs/should.js) | [Site](http://shouldjs.github.io)
 
 ### License
 MIT
