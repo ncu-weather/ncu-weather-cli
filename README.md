@@ -2,7 +2,7 @@
 A simple CLI for NCU's Information
 
 ### Requirements
-- Node.js 6.x
+- Node.js v6 or higher
 
 ### Global Install
 ```bash
