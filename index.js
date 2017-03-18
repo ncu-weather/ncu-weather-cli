@@ -5,6 +5,8 @@ const bonus = require('./lib/bonus')
 module.exports = {
     time,
     weather: weather.ncu,
-    convertWeather: weather.convert,
+    convert: weather.convert,
+    weatherAtm: weather.ncuAtm,
+    convertAtm: weather.convertAtm,
     bonus
 }

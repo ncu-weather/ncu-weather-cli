@@ -17,7 +17,14 @@ $ npm install ncu
 
 ```javascript
 const ncu = require('ncu')
-ncu.weather().then( data => console.log(ncu.convertWeather(data)) ).catch(err => console.log(err))
+
+// get data from http://www.ncu.edu.tw
+ncu.weather().then( data => console.log(ncu.convert(data)) ).catch( err => console.log(err) )
+
+// get data from http://pblap.atm.ncu.edu.tw
+ncu.weatherAtm().then( data => console.log(ncu.convertAtm(data) ).catch( err => console.log(err) )
+
+// functions
 console.log(ncu.time())
 console.log(ncu.bonus())
 ```

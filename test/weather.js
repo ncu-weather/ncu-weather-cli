@@ -44,4 +44,43 @@ describe('weather', () => {
             weather.convert(data).should.equal('Temperature: 18 ℃\n     PRECIP: 3.66 mm/hr\n\n\u{1F455}  Remember to dress warmly\n\u2602  Don\'t forget to take your umbrella\n')
         })
     })
+    describe('#ncuAtm()', function () {
+        this.timeout(5000)
+        let ncu = weather.ncuAtm()
+        it('should be an object', () => {
+            return ncu.should.finally.be.an.Object()
+        })
+        it('should have size 6', () => {
+            return ncu.should.finally.have.size(6)
+        })
+        it('should have property temperature which is a number', () => {
+            return ncu.should.finally.have.property('temperature').which.is.a.Number()
+        })
+        it('should have property relativeHumidity which is a number', () => {
+            return ncu.should.finally.have.property('relativeHumidity').which.is.a.Number()
+        })
+        it('should have property windDirection which is a number', () => {
+            return ncu.should.finally.have.property('windDirection').which.is.a.Number()
+        })
+        it('should have property windSpeed which is a number', () => {
+            return ncu.should.finally.have.property('windSpeed').which.is.a.Number()
+        })
+        it('should have property pressure which is a number', () => {
+            return ncu.should.finally.have.property('pressure').which.is.a.Number()
+        })
+        it('should have property precip which is a number', () => {
+            return ncu.should.finally.have.property('precip').which.is.a.Number()
+        })
+    })
+    describe('#convertAtm()', () => {
+        const data = {
+            temperature: 15,
+            relativeHumidity: 66,
+            windSpeed: 3.3,
+            precip: 0.1
+        }
+        it('should be a string', () => {
+            weather.convertAtm(data).should.be.a.String // eslint-disable-line
+        })
+    })
 })
