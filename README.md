@@ -8,6 +8,8 @@ A simple CLI for NCU's Information
 ```bash
 $ npm install ncu -g
 $ ncu
+or
+$ ncu-weather
 ```
 
 ### Local Install
@@ -38,3 +40,4 @@ console.log(ncu.bonus())
 
 ### License
 MIT
+
