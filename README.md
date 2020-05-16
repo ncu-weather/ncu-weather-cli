@@ -6,19 +6,19 @@ A simple CLI for NCU's Information
 
 ### Global Install
 ```bash
-$ npm install ncu -g
-$ ncu
+$ npm install ncu-weather -g
+$ ncuw
 or
 $ ncu-weather
 ```
 
 ### Local Install
 ```bash 
-$ npm install ncu
+$ npm install ncu-weather
 ```
 
 ```javascript
-const ncu = require('ncu')
+const ncu = require('ncu-weather')
 
 // get data from http://www.ncu.edu.tw
 ncu.weather().then( data => console.log(ncu.convert(data)) ).catch( err => console.log(err) )

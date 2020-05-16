@@ -1,9 +1,9 @@
 {
-  "name": "ncu",
+  "name": "ncu-weather",
   "version": "0.2.1",
   "description": "Information for National Central University, Taiwan",
   "bin": {
-    "ncu": "cli.js",
+    "ncuw": "cli.js",
     "ncu-weather": "cli.js"
   },
   "main": "index.js",
@@ -18,7 +18,8 @@
     "url": "https://github.com/ncu-weather/ncu-weather-cli.git"
   },
   "keywords": [
-    "ncu"
+    "ncuw",
+    "ncu-weather"
   ],
   "author": "lovenery",
   "license": "MIT",
